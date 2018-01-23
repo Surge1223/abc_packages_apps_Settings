@@ -60,4 +60,9 @@
     <string name="show_light_on_zen_title">Blink during Do Not Disturb</string>
 
     <string name="wireless_charging_sounds_title">Wireless charging sounds</string>
+
+    <!-- [CHAR LIMIT=80]-->
+    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
+    <!--  [CHAR LIMIT=160]-->
+    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
 </resources>
