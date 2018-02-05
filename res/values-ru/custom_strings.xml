@@ -40,13 +40,6 @@
 
     <string name="background_processes_settings_title">Фоновые процессы</string>
 
-    <string name="alert_on_charged_level_title">Уведомление об оптимальном уровне заряда</string>
-    <string name="alert_on_charged_level_summary">Уведомлять пользователя о достижении оптимального уровня заряда с помощью звука или вибрации, если до этого экран был выключен на протяжении хотя бы 1 мин.\nУведомление может быть отключено по долгому нажатию на него.</string>
-    <string name="alert_on_charged_level_dis">Отключено</string>
-    <string name="alert_on_charged_level_80">"80%"</string>
-    <string name="alert_on_charged_level_90">"90%"</string>
-    <string name="alert_on_charged_level_99">"99%"</string>
-
     <string name="abc_settings_activity">Персонализация</string>
     <string name="abc_settings_activity_summary">Дополнительные настройки</string>
 
@@ -60,4 +53,9 @@
     <string name="show_light_on_zen_title">Включить светодиод в режиме «Не беспокоить»</string>
 
     <string name="wireless_charging_sounds_title">Сигналы беспроводной зарядки</string>
+
+    <!-- [CHAR LIMIT=80]-->
+    <string name="fp_swipe_to_dismiss_notifications_title">Горизонтальный свайп по сканеру отпечатка для скрытия уведомлений</string>
+    <!--  [CHAR LIMIT=160]-->
+    <string name="fp_swipe_to_dismiss_notifications_summary">Чтобы скрыть уведомления, проведите влево или вправо по сканеру отпечатка пальца.</string>
 </resources>
