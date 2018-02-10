@@ -366,7 +366,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private DevelopmentSettingsEnabler mSettingsEnabler;
     private DevelopmentSwitchBarController mSwitchBarController;
     private TelephonyMonitorPreferenceController mTelephonyMonitorController;
-    private CameraHalHdrplusPreferenceController mCameraHalHdrplusController;
     private CameraLaserSensorPreferenceController mCameraLaserSensorController;
 
     private BroadcastReceiver mEnableAdbReceiver;
@@ -406,7 +405,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mTelephonyMonitorController = new TelephonyMonitorPreferenceController(getActivity());
         mWebViewAppPrefController = new WebViewAppPreferenceController(getActivity());
         mVerifyAppsOverUsbController = new VerifyAppsOverUsbPreferenceController(getActivity());
-        mCameraHalHdrplusController = new CameraHalHdrplusPreferenceController(getActivity());
         mCameraLaserSensorController = new CameraLaserSensorPreferenceController(getActivity());
 
         setIfOnlyAvailableForAdmins(true);
@@ -438,7 +436,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
         mTelephonyMonitorController.displayPreference(getPreferenceScreen());
         mWebViewAppPrefController.displayPreference(getPreferenceScreen());
-        mCameraHalHdrplusController.displayPreference(getPreferenceScreen());
         mEnableAdbController.displayPreference(getPreferenceScreen());
 
         mCameraLaserSensorController.displayPreference(getPreferenceScreen());
@@ -665,7 +662,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mEnableAdbController.enablePreference(enabled);
         mTelephonyMonitorController.enablePreference(enabled);
         mWebViewAppPrefController.enablePreference(enabled);
-        mCameraHalHdrplusController.enablePreference(enabled);
         mCameraLaserSensorController.enablePreference(enabled);
         updateAllOptions();
     }
@@ -798,7 +794,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                             == PackageManager.COMPONENT_ENABLED_STATE_ENABLED);
         }
         mHaveDebugSettings |= mTelephonyMonitorController.updatePreference();
-        mHaveDebugSettings |= mCameraHalHdrplusController.updatePreference();
         mHaveDebugSettings |= mCameraLaserSensorController.updatePreference();
         updateSwitchPreference(mKeepScreenOn, Settings.Global.getInt(cr,
                 Settings.Global.STAY_ON_WHILE_PLUGGED_IN, 0) != 0);
@@ -2448,10 +2443,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         }
 
         if (mVerifyAppsOverUsbController.handlePreferenceTreeClick(preference)) {
-            return true;
-        }
-
-        if (mCameraHalHdrplusController.handlePreferenceTreeClick(preference)) {
             return true;
         }
 
