@@ -367,6 +367,8 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
         Button blackAccent = null;
         if (mView != null) {
             blackAccent = mView.findViewById(R.id.blackAccent);
+
+            // Change the accent picker button depending on whether or not the dark theme is applied
             blackAccent.setBackgroundColor(getResources().getColor(
                     isUsingDarkTheme() ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
             blackAccent.setBackgroundTintList(getResources().getColorStateList(
@@ -387,6 +389,9 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
         if (mView != null) {
 
             int intOrientation = getResources().getConfiguration().orientation;
+
+            // Lets split this up instead of creating two different layouts
+            // just so we can change the columns
             gridlayout = mView.findViewById(R.id.Gridlayout);
             if (intOrientation == Configuration.ORIENTATION_PORTRAIT) {
                 gridlayout.setColumnCount(5);
@@ -396,6 +401,7 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
         }
     }
 
+    // Check for the dark theme overlay
     private boolean isUsingDarkTheme() {
         OverlayInfo themeInfo = null;
         try {
