@@ -193,6 +193,7 @@
     <string name="slim_blacklist_apps_summary">Apps to not show in the panel</string>
     <string name="slim_blacklist_add_apps_title">Add app</string>
     <string name="slim_blacklist_add_apps_summary">Tap here to add, tap on added app to remove it</string>
+    <string name="slim_recents_hints_footer">To clear all apps, pinch-in with two fingers on the panel. To block an app from being cleared, long press on its icon to star it.\n\nFor additional recents features such as multiwindow or to kill an app, long press or drag an app card in the panel.</string>
 
     <!-- Navigation -->
     <string name="buttons_title">Buttons</string>
@@ -289,7 +290,7 @@
     <string name="fling_longpress_title">Long press delay</string>
     <string name="fling_longpress_summary">Increase or decrease the time it takes to execute a long press</string>
     <string name="fling_keyboard_cursors_title">Dynamic keyboard cursors action</string>
-    <string name="fling_keyboard_cursors_summary">Double tap left and right actions becomes left and right keyboard cursor actions if keyboard is open</string>
+    <string name="fling_keyboard_cursors_move_summary">When keyboard is showing, long press left or right to move the text cursor to left or right.\nKeep longpressing to keep moving the cursor, single tap on bar to go to home screen.</string>
     <string name="fling_logo_opacity_title">Fling logo opacity</string>
 
     <!-- Pulse navigation bar music visualizer -->
@@ -445,10 +446,15 @@
     <string name="battery_style_big_circle">Big circle</string>
     <string name="battery_style_big_dotted_circle">Big dotted circle</string>
     <string name="battery_style_text">Text</string>
+    <string name="battery_style_hidden">Hidden</string>
     <string name="show_battery_percent_title">Show battery percentage</string>
     <string name="show_battery_percent_summary">Show battery level percentage near the icon</string>
     <string name="battery_style_category_title">Battery level</string>
 
     <string name="incall_notifications_vibrate">Less annoying in-call notifications</string>
     <string name="incall_notifications_vibrate_summary">Vibrate instead of playing a sound for in-call notifications</string>
+
+    <string name="screenshot_edit_app">Screenshot editor</string>
+    <string name="screenshot_edit_app_summary">Select which image editor to use to edit screenshots</string>
+    <string name="screenshot_edit_app_no_editor">No image editor available</string>
 </resources>
